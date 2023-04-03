@@ -19,14 +19,14 @@ def main():
         if (crossaint_number >= 6):  # if the number of crossaints is grater than or equal to 6
             total1 = constants.CROSSAINTS * crossaint_number
             print(f"\nThe cost for a {crossaint_number} crossaints is ${total1:.2f}.")
+        else:
             sub_total = constants.CROSSAINTS * crossaint_number
             total2 = sub_total + (sub_total * constants.HST)
             print(f"\nThe cost for a {crossaint_number} crossaint's is ${total2:.2f}.")
     except ValueError:
         print("Invalid input")
     finally:
-        print("Thanks for playing! 😊")
-        print("\nDone.")
+        print("\nThanks for playing! 😊.")
 
 
 print("\nDone")
