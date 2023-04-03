@@ -38,7 +38,7 @@ int main() {
         sub_total2 = crossaint_Number * CROISSANTS;
         total2 = sub_total2 + (sub_total2 * HST);
         printf("The cost for the crossaints is $ %.2f.\n", total2); 
-    } else if (crossaintNumber == 0) {
+    } else if (crossaintNumber = 0) {
         printf("Invalid input, please try again.\n"); 
     }
 
