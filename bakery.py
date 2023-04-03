@@ -16,16 +16,17 @@ def main():
     # process
     try:
         crossaint_number = int(crossaint_number_str)
-    except ValueError:
-        print("Invalid input")
-    else:
         if (crossaint_number >= 6):  # if the number of crossaints is grater than or equal to 6
             total1 = constants.CROSSAINTS * crossaint_number
-        print(
-            f"\nThe cost for a {crossaint_number} inch pizza is ${:.2f}.")
-        print("\nDone")
-        else:  # if the number of crossaints is less than 6
-            print(f"\nThe cost for a {crossaint_number} is ${total1:.2f}.")
+            print(f"\nThe cost for a {crossaint_number} crossaints is ${total1:.2f}.")
+            sub_total = constants.CROSSAINTS * crossaint_number
+            total2 = sub_total + (sub_total * constants.HST)
+            print(f"\nThe cost for a {crossaint_number} crossaint's is ${total2:.2f}.")
+    except ValueError:
+        print("Invalid input")
+    finally:
+        print("Thanks for playing! 😊")
+        print("\nDone.")
 
 
 print("\nDone")
