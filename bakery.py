@@ -12,7 +12,7 @@ import constants
 def main():
     """The main() function calculates the cost of crossaints, returns None."""
     # input
-    crossaint_number_str = int(input("Enter the number of crossaints: "))
+    crossaint_number_str = input("Enter the number of crossaints: ")
     # process
     try:
         crossaint_number = int(crossaint_number_str)
@@ -26,11 +26,9 @@ def main():
     except ValueError:
         print("Invalid input")
     finally:
-        print("\nThanks for playing! 😊.")
-
-
-print("\nDone")
+        print("\nThanks for coming! 😊.")
 
 
 if __name__ == "__main__":
     main()
+    print("\nDone")
