@@ -18,7 +18,7 @@ def main():
         crossaint_number = int(crossaint_number_str)
         if (
             crossaint_number >= 6
-        ):  # if the number of crossaints is grater than or equal to 6
+        ):  # if the number of crossaints is greater than or equal to 6
             total1 = constants.CROSSAINTS * crossaint_number
             print(f"\nThe cost for a {crossaint_number} crossaints is ${total1:.2f}.")
         else:
