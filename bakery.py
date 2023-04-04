@@ -26,7 +26,7 @@ def main():
             total2 = sub_total + (sub_total * constants.HST)
             print(f"\nThe cost for a {croissant_number} croissant's is ${total2:.2f}.")
     except ValueError:
-        print("Invalid input")
+        print("\nInvalid input")
     finally:
         print("\nThanks for coming! 😊.")
 
