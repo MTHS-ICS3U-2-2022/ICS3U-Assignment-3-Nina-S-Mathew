@@ -5,5 +5,5 @@ Created on: Feb 26 2023
 This is module contains constants for the pizza program
 """
 
-CROSSAINTS = 2.55
+CROISSANT = 2.55
 HST = 0.13
