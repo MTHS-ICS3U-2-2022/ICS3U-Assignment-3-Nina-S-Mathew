@@ -4,44 +4,42 @@
 // Created on: Mar 1, 2023
 // This program the cost of croissants
 
-
-
 #include <stdio.h>
 
-
-int main() {
+int main()
+{
     // This function calculates cost of croissants
     const float CROISSANTS = 2.55;
     const float HST = 0.13;
 
-
-    float croissant_Number = 0;
+    float croissantNumberFloat = 0;
     int croissantNumber;
     float sub_total1;
     float sub_total2;
     float total1;
     float total2;
 
-
     // input
     printf("How many croissants would you like?: ");
-    scanf("%f", &croissant_Number);
-
+    scanf("%f", &croissantNumberFloat);
 
     // process
-    if (croissant_Number == 0) {
+    if (croissantNumberFloat == 0)
+    {
         printf("Invalid input, please try again.\n");
     }
-        if (croissant_Number >= 6) {
+    if (croissantNumberFloat >= 6)
+    {
         // output
-            total1 = croissant_Number * CROISSANTS;
+        total1 = croissantNumberFloat * CROISSANTS;
         printf("The cost for the croissants is $ %.2f.\n", total1);
-        }
-    if (croissant_Number < 6 && croissant_Number > 0) {
-        sub_total2 = croissant_Number * CROISSANTS;
+    }
+    if (croissantNumberFloat < 6 && croissantNumberFloat > 0)
+    {
+        sub_total2 = croissantNumberFloat * CROISSANTS;
         total2 = sub_total2 + (sub_total2 * HST);
         printf("The cost for the croissants is $ %.2f.\n", total2);
     }
-        printf("\nDone.\n");
-        return 0;
-    }
+    printf("\nDone.\n");
+    return 0;
+}
