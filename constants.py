@@ -7,3 +7,4 @@ This is module contains constants for the pizza program
 
 CROISSANT = 2.55
 HST = 0.13
+MAXBEFORETAX = 6

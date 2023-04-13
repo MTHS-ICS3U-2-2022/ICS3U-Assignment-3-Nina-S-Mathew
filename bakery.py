@@ -17,8 +17,8 @@ def main():
     try:
         croissant_number = int(croissant_number_str)
         if (
-            croissant_number >= 6
-        ):  # if the number of croissants is greater than or equal to 6
+            croissant_number >= constants.MAXBEFORETAX
+        ):  # max amount of croissants before tax
             total1 = constants.CROISSANT * croissant_number
             print(f"\nThe cost for a {croissant_number} croissants is ${total1:.2f}.")
         else:
